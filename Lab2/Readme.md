@@ -8,3 +8,4 @@ Upon request from Investor Inc., I went through the systems of Windows 10 and Ce
 ## Executive Summary
 ---
 
+I am evaluating Windows 10 and CentOS 7 for Investor Inc. to provide recommendations of steps to take to ensure known vulnerabilities and security concerns are addressed. The system I am using to evaluate this is STIG (Security Technical Implementation Guide) and the checklists for each system respectively. These checklists allow me to ensure that the systems meet the recommended security compliances and allow me to fix known security concernse and vulnerabilities. These security flaws and vulnerabilities are all based off of known NIST recommendations. Through utilizing Virtual Machines on VirtualBox, along with STIG Viewer, I evaluated both Windows 10 and CentOS 7 for compliance with different NIST recommendations. The Virtual Machines allowed me to ensure testing was in a controlled environment and no harm was done to any real machines.
