@@ -23,13 +23,13 @@ My background as a Cyber Security Practitioner comes from my education of progra
 ## Method
 To accomplish this evaluation the following tools were used:
 * STIGViewer
-⋅⋅⋅STIGViewer was used to track and manage the Windows 10 and the CentOS 7 Checklists as the evaluation was taking place. As different controls were being examined, they would be tracked as either "Open" when there was a finding and finding details were added, or as "Not a Finding" if the system already had the controls integrated. 
+- STIGViewer was used to track and manage the Windows 10 and the CentOS 7 Checklists as the evaluation was taking place. As different controls were being examined, they would be tracked as either "Open" when there was a finding and finding details were added, or as "Not a Finding" if the system already had the controls integrated. 
 * Windows 10 VM (Matches the version on all Windows 10 machines in the organization)
-⋅⋅⋅The Windows 10 VM was the same version that all the other Windows 10 machines were running allowing me to examine the controls that were in place on the actual machines without risking and compromising an actual machine.
+- The Windows 10 VM was the same version that all the other Windows 10 machines were running allowing me to examine the controls that were in place on the actual machines without risking and compromising an actual machine.
 * CentOS 7 VM (Matches the version on all Windows 10 machines in the organization)
-⋅⋅⋅The CentOS 7 VM was the same version that all the other CentOS 7 machines were running allowing me to examine the controls that were in place on the actual machines without risking and compromising an actual machine.
+- The CentOS 7 VM was the same version that all the other CentOS 7 machines were running allowing me to examine the controls that were in place on the actual machines without risking and compromising an actual machine.
 * Vagrant
-⋅⋅⋅Vagrant was used to manage and deploy the virtual machines through VirtualBox. This allowed for the creating and enabling of multiple virtual machines ensuring they had the same configuration. Everytime the machine was created, the version would be of the same configuration as the ones before. This allowed for a repeatable process, ensuring that the systems were properly configured. The evaluation can be repeated easily and with confidence. The machines that were examined matched a version that was on Vagrant Cloud.
+- Vagrant was used to manage and deploy the virtual machines through VirtualBox. This allowed for the creating and enabling of multiple virtual machines ensuring they had the same configuration. Everytime the machine was created, the version would be of the same configuration as the ones before. This allowed for a repeatable process, ensuring that the systems were properly configured. The evaluation can be repeated easily and with confidence. The machines that were examined matched a version that was on Vagrant Cloud.
 * VirtualBox
-⋅⋅⋅VirtualBox was the Hypervisor of choice to be used with Vagrant. VirtualBox allowed me to created desktop virtualization to utilize the GUI as a regular user would see it. I was able to easily access and confirm the controls on the systems as well as implement changes to ensure that the corrections could be implemented to fix findings. 
+- VirtualBox was the Hypervisor of choice to be used with Vagrant. VirtualBox allowed me to created desktop virtualization to utilize the GUI as a regular user would see it. I was able to easily access and confirm the controls on the systems as well as implement changes to ensure that the corrections could be implemented to fix findings. 
 
