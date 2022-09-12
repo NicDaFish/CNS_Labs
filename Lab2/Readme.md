@@ -100,3 +100,14 @@ Fixed Control
 ![alt text](/Lab2/Screenshots/Centos_V-204426_FindingFixed2.png "Fixed Finding")
 
 ---
+
+## Highest Impact Controls Discussion
+
+With STIG and the checklists for Windows 10 and CentOS 7 I was able to evaluate how important certain controls are through the different levels of compliance. There are three levels and they are CAT 1, CAT 2, and CAT 3. CAT 1 controls that are findings offer the highest risk for exploiting machines and doing damage to the network. CAT 2 is a moderate level of security risks and still offers the ability for the organization to be damaged. Finally, CAT 3 is the lowest risk of damage which should still be fixed but are not the first priority.
+
+### Windows 10 Highest Security Risks
+
+* V-220707 (CAT 1) - The Windows 10 system must use an anti-virus program. While extremely simple, this use of an anti-virus program can assist in ensuring if anything got on the machine, if it is recognized it would be quaritined.
+* V-220708 (CAT 1) - Local volumes must be formatted using NTFS. This is such a high security concern due to the essential nature of needing to set proper permissions and auditing for the Local Volumes.
+* V-220740 (CAT 2) - The number of allowed bad logon attempts must be configured to 3 or less. This is a moderate security concern because it is still vital to ensure that someone can not keep trying passwords forever. Account lockout is vital to ensure security from unauthorized access attempts.
+* 
