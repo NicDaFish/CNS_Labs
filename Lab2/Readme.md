@@ -107,7 +107,7 @@ With STIG and the checklists for Windows 10 and CentOS 7 I was able to evaluate 
 
 ### Windows 10 Highest Security Risks
 
-* V-220707 (CAT 1) - The Windows 10 system must use an anti-virus program. While extremely simple, this use of an anti-virus program can assist in ensuring if anything got on the machine, if it is recognized it would be quaritined.
+* V-220707 (CAT 1) - The Windows 10 system must use an anti-virus program. While extremely simple, this use of an anti-virus program can assist in ensuring if anything got on the machine, if it is recognized it would be quaratined.
 * V-220708 (CAT 1) - Local volumes must be formatted using NTFS. This is such a high security concern due to the essential nature of needing to set proper permissions and auditing for the Local Volumes.
 * V-220740 (CAT 2) - The number of allowed bad logon attempts must be configured to 3 or less. This is a moderate security concern because it is still vital to ensure that someone can not keep trying passwords forever. Account lockout is vital to ensure security from unauthorized access attempts.
 * V-220742 (CAT 2) - The password history must be configured to 24 passwords remembered. This is vital to implement to ensure that there is not a chance of unauthorized access if one password is compromised. Having revolving and changing passwords is vital to ensure the security of user accounts.
