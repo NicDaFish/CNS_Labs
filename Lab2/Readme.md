@@ -44,7 +44,20 @@ During the evaluation of the Windows 10 and CentOS 7 systems, the assumpthin tha
 * V-220743 - The maximum password age must be configured to 60 dyas or less. This was set to 42 days by default in the Local Computer Policy navigation to Password Policy.
 
 #### Controls Evaluated - Resulted in "Finding" and corrected:
-*
+* V-220699 - Windows 10 systems must have Unified Extensible Firmware Interface (UEFI) firmware and be configured to run in UEFI mode, not Legacy BIOS. Changed the BIOS boot mode to UEFI in the BIOS upon boot. To demonstrate it worked on the VM, the settings for the motherboard was changed inside the VirtualBox settings.)
+* V-220740 - The number of allowed bad logon attempts must be configured to 3 or less. Utilizing gpedit.msc and navigating Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Account Lockout Policy, I changed the lockout threshold from 0 to 1.
+*  V-220741 - The period of time before the bad logon counter is reset must be configured to 15 minutes. Utilizing gpedit.msc and navigating Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Account Lockout Policy, I changed the lockout counter from 0 to 30 minutes.
+*  V-220742 - The password history must be configured to 24 passwords remembered. Utilizing gpedit.msc and navigating Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Password Policy I changed the enforce password history from 0 to 24 passwords remembered.
+*  V-220744 - The minimum password age must be configured to at least 1 day. Utilizing gpedit.msc and navigating Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Password Policy I changed the minimum password age from 0 to 1 day.
+*  V-220744 - Passwords must, at a minimum, be 14 characters. Utilizing gpedit.msc and navigating Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Password Policy I changed the minimum password length from 0 characters to 14 characters.
+*  V-220856 - Users must be prevented from changing installation options. Utilizing the registry, I navigated to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer\ to check if the vaule name was enabled. To correct this, I changed the policy value by navigating to Computer Configuration >> Administrative Templates >> Windows Components >> Windows Installer >> "Allow user control over installs" and set it to disabled.
+
+#### Controls Evaluated - Resulted in "Finding" and left "Open" or N/A:
+* V-220716 - Accounts must be configured to require password expiration. Both accounts on the system had passwords that would never expire.
+* V-220734 - Bluetooth must be turned off unless approved by the organization. This was N/A because the devices in the organization do not have bluetooth as an option.
+
+**Image Demonstration**
+![alt text](https://github.com/NicDaFish/CNS_Labs/tree/main/Lab2/Screenshots/WindowsScreenshotFixed_V220741.png "Unfixed Finding")
 
 ### CentOS 7 System
 
