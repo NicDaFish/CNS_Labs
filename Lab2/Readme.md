@@ -114,4 +114,14 @@ With STIG and the checklists for Windows 10 and CentOS 7 I was able to evaluate 
 
 **Windows 10 Discussion**
 
-The above examples of different controls and their category level shows the multitude of vital pieces of Windows 10 that need to be secured. Some of the above controls were implemented already while others I had to implement. Any of these controls could lead to a large amount of damage to data and the network.
+The above examples of different controls and their category level shows the multitude of vital pieces of Windows 10 that need to be secured. Some of the above controls were implemented already while others I had to implement. Any of these controls could lead to a large amount of damage to data and the network. With the password findings, these controls offer a massive opportunity for privilage escalation and unauthorized access. Overall, implementing these controls and ensuring that Windows 10 is updated to the latest version with installed drivers, will greatly increase the security for the organization.
+
+### CentOS 7 Highest Security Risks
+
+* V-204424 (CAT 1) - The Red Hat Enterprise Linux operating system must not allow accounts configured with blank or null passwords. This was a control that had a finding and is of great concern. If there is an ability to log in without a password, this could lead to exploitation with privilage escalation. 
+* V-204425 (CAT 1) - The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not allow authentication using an empty password. This is concerning due to the ability for a person to get into the system with ssh without a password. This was correctly implemented by default so it was not a concern, but should be checked on all systems.
+* V-204442 (CAT 1) - The Red Hat Enterprise Linux operating system must not have the rsh-server package installed. This control was a finding due to the rsh-server package being installed. This presented the risk of having the ability to have a remote access service that was unencrypted. For most organizations, this is not needed for operations and should be removed to protect against unauthorized control.
+
+**CentOS 7 Discussion**
+
+The above examples 
