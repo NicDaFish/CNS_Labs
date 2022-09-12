@@ -37,6 +37,14 @@ During the evaluation of the Windows 10 and CentOS 7 systems, the assumpthin tha
 
 ## Summary of Actions Taken
 ### Windows 10 System
+#### Controls Evaluated - Resulted in "Not a Finding":
+* V-220697 - Ensure that the Edition of Windows is "Windows 10 Enterprise" Found in "Settings" under "System", then "About".  
+* V-220708 - Ensure that the File System is using "NTFS" for each volume. Run `Computer Management` and navigate to storage and Disk Management to check
+* V-220709 - Alternate operating systems must not be permitted.
+* V-220743 - The maximum password age must be configured to 60 dyas or less. This was set to 42 days by default in the Local Computer Policy navigation to Password Policy.
+
+#### Controls Evaluated - Resulted in "Finding" and corrected:
+*
 
 ### CentOS 7 System
 
