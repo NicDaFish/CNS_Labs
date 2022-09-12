@@ -83,3 +83,20 @@ Fixed Control
 * V-204426 - The Red Hat Enterprise Linux operating system must disable account identifiers (individuals, groups, roles, and devices) if the password expires. To correct this finding, I altered the file /etc/default/useradd and changed the value of INACTIVE to 35.
 * V-204442 - The Red Hat Enterprise Linux operating system must not have the rsh-server package installed. To correct this finding, I ran the command `sudo apt-get remove rsh-server`.
 
+#### Controls Evaluated - Resulted in "Finding" and left "Open" or N/A:
+* V-204422 - The Red Hat Enterprise Linux operating system must be configured so that passwords are prohibited from reuse for a minimum of five generations. This was a finding that is left in the Open status and is recommended to be fixed.
+* V-204424 - The Red Hat Enterprise Linux operating system must not allow accounts configured with blank or null passwords. This is a finding that was left in the open state and is highly recommend that it be corrected as soon as possible.
+
+**Image Demonstration**
+
+Unfixed Control
+
+![alt text](/Lab2/Screenshots/Centos_V-204426_Finding.png "Unfixed Finding")
+
+Fixed Control
+
+![alt text](/Lab2/Screenshots/Centos_V-204426_FindingFixed.png "Fixed Finding")
+
+![alt text](/Lab2/Screenshots/Centos_V-204426_FindingFixed2.png "Fixed Finding")
+
+---
