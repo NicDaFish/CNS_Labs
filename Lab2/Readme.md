@@ -6,6 +6,14 @@ Upon request from Investor Inc., I went through the systems of Windows 10 and Ce
 ---
 
 ## Executive Summary
+The purpose of this evaluation was to analyze the Windows 10 and CentOS 7 systems that Investor Inc. utilizes to ensure NIST standards were met through comparison with the Security Technical Implementation Guide (STIG). This was accomplished by comparing the systems to the STIG checklists by using the STIG viewer tool to compare and fix missing best practices or help reduce vulnerabilities. The STIG checklists, as I will display later, allowed me to record changes, finds, and recommendations I came across as I was evaluating the systems. Any recommendations that are still open are marked by the status of `Open` and ones that were fixed or properly implemented were marked as `Not a Finding`. Overall, I recommend that the systems continue to be updated due to the multitude of finds that still exist on the systems.
+
 ---
 
+## Introduction
 I am evaluating Windows 10 and CentOS 7 for Investor Inc. to provide recommendations of steps to take to ensure known vulnerabilities and security concerns are addressed. The system I am using to evaluate this is STIG (Security Technical Implementation Guide) and the checklists for each system respectively. These checklists allow me to ensure that the systems meet the recommended security compliances and allow me to fix known security concernse and vulnerabilities. These security flaws and vulnerabilities are all based off of known NIST recommendations. Through utilizing Virtual Machines on VirtualBox, along with STIG Viewer, I evaluated both Windows 10 and CentOS 7 for compliance with different NIST recommendations. The Virtual Machines allowed me to ensure testing was in a controlled environment and no harm was done to any real machines.
+
+---
+
+## Background of Practitioner
+My background as a Cyber Security Practitioner comes from my education of programming and networking throughout my time in high school. From there I worked on cloud development as a Software Engineer Intern for IBM for 2 years. I worked with a multitude of languages and tools from virtual machines to Docker to languages such as Python, Java, C++, and Swift. I continued to develop my Cyber Security education at the United States Coast Guard Academy where I continued to practice and expand my knowledge of programming and networking. I expanded into Cyber Security over my studies which have given me the ability to learn how to analyze and evaluate systems for vulnerabilities and good cyber practices.
