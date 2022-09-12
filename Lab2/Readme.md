@@ -57,10 +57,13 @@ During the evaluation of the Windows 10 and CentOS 7 systems, the assumpthin tha
 * V-220734 - Bluetooth must be turned off unless approved by the organization. This was N/A because the devices in the organization do not have bluetooth as an option.
 
 **Image Demonstration**
+
 Unfixed Control
+
 ![alt text](/Lab2/Screenshots/WindowsScreenshotFixed_V220741.png "Unfixed Finding")
 
 Fixed Control
+
 ![alt text](/Lab2/Screenshots/WindowsScreenshot_V-220856.png "Fixed Finding")
 
 ---
