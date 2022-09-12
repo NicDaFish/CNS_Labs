@@ -32,3 +32,11 @@ To accomplish this evaluation the following tools were used:
 
 ## Assumptions
 During the evaluation of the Windows 10 and CentOS 7 systems, the assumpthin that all the machines had the exact same environment was made. It is assumed that the organization has the same image file for the operating systems and that a new image could be created with the controls and findings corrected. This would allow for the organization to push the changes out to every machine. The assumption was made that the versions of Windows 10 and CentOS 7 were up-to-date and had the latest patches installed. Furthermore, it was assumed that the STIG checklists that were utilized were the most recent and up-to-date with the latest known controls and vulnerabilites that should be addressed. These assumptions assured that the tests were accurate and fixes could be applied to all machines. It also allowed for the proper testing of one virtual machine to check all the machines that the company may have employees using.
+
+---
+
+## Summary of Actions Taken
+### Windows 10 System
+
+### CentOS 7 System
+
