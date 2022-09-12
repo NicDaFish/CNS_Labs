@@ -70,3 +70,12 @@ Fixed Control
 
 ### CentOS 7 System
 
+#### Controls Evaluated - Resulted in "Not a Finding":
+* V-204425 - The Red Hat Enterprise Linux operating system must be configured so that the SSH daemon does not allow authentication using an empty password. The value is set to "no" as required so an empty password can not be used for SSH authentication
+
+#### Controls Evaluated - Resulted in "Finding" and corrected:
+* V-204410 - The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed or new passwords are established, the new password must contain at least one special character. To correct this, I changed the file "/etc/security/pwquality.conf" by altering the line 'ocredit = 1' changed from 1 to -1. 
+* V-204411 - The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed a minimum of eight of the total number of characters must be changed. To correct this, I changed the value of difok to 8 in the file "/etc/security/pwquality.conf".
+* V-204412 - The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed a minimum of four character classes must be changed. To correct this, I corrected the file "/etc/security/pwquality.conf" by changing the minclass to 4.
+* V-204413 - 
+
