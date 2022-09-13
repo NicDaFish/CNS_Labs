@@ -35,7 +35,14 @@ During the evaluation of the Windows 10 and CentOS 7 systems, the assumpthin tha
 
 ---
 
-## Summary of Actions Taken
+## Summary of Actions Taken (Identification of Controls Assessed
+
+To create the test environment for the evaluation, I utilized Vagrant to create environments of Windows 10 and CentOS 7. Utilizing Vagrant allowed me to create the exact same version of a Virtual Machine each time for consistant and repeatable evaluations and testing. I used Vagrant with the Hypervisor VirtualBox to actually run the Virtual Machines. I then set up the STIG Viewer with a checklist for Windows 10 and a checklist for CentOS 7. I then began working on testing and evaluating the machines.
+
+For Windows 10, I identified controls to evaluate and when through the process of confirming if they were findings or not. If there was a finding, I would note what was found and then would continue through the steps to fix the finding. I would then state what setting I implemented in the comments to ensure that it was documented and the result was understood. The final result would be a commented control labeled as "Not a Finding". When a finding was located and was not fixed, it would marked as "Open" and I would put finding details to note what was wrong with it and what had to be fixed. The processes to verify and fix the controls through the settings, Windows\System32 directory, gpedit.msc, and the local computer policy for the main ones. The settings in these areas were changed and sometimes Powershell was used to fix the findings. The steps on each control were followed to make an evaluation.
+
+For CentOS 7, I also identified controls in the same manner as Windows 10 for marking and documenting controls. I also marked open findings as "Open" to ensure further review, and for the controls that were not a finding or were fixed were marked as "Not a Finding" when they were completed. To evaluate, I worked inside the terminal for inspecting the controls as well as editing the files to fix the settings. `Grep` was used to find and get the value of the settings that were being evaluated. I then used `Vim` and `Nano` to edit the files and edit the values of the settings to fix the findings.
+
 ### Windows 10 System
 #### Controls Evaluated - Resulted in "Not a Finding":
 * V-220697 - Ensure that the Edition of Windows is "Windows 10 Enterprise" Found in "Settings" under "System", then "About".  
