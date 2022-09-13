@@ -126,4 +126,15 @@ The above examples of different controls and their category level shows the mult
 
 The above examples display the major need to ensure that there is proper implementation of tools and limitation of tools such as rsh-server. There are a lot of different tools that are not needed for use under your organization, and should be removed. These could present unknown security risk if they were just left in place. Furthermore, being bale to access the machine either with ssh or physically with a `null` password value leads to a multitude of vulnerabilites. These corrections are necassary to harden the basic access and defense on all the systems across the organizations network.
 
+---
 
+## Conclusion
+
+While evaluating Windows 10 and CentOS 7 with their respective STIG checklists, I came across multiple findings that had to be corrected. These systems needed to be hardened to boost their security against many known possible vulnerabilities. All these findings were documented and have been passed forward with this document. There are some that remain open with more suggestions and fixes that need to be addressed. I recommend the continued evaluation of the Operating Systems and any future Operating Systems to limit vulnerabilites and maintain strong cybersecurity throughout the organization and the network.
+
+---
+
+## Artifacts and Appendix
+
+* All artifacts are stored in the Screenshots folder.
+* All STIG Checklists with notes and finding information are located in the STIGs folder.
