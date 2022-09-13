@@ -143,5 +143,5 @@ While evaluating Windows 10 and CentOS 7 with their respective STIG checklists, 
 
 ## Artifacts and Appendix
 
-* All artifacts are stored in the Screenshots folder.
-* All STIG Checklists with notes and finding information are located in the STIGs folder.
+* All artifacts are stored in the [Screenshots folder](/Screenshots).
+* All STIG Checklists with notes and finding information are located in the [STIGs folder](/STIGs).
