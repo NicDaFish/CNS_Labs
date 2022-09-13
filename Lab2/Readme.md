@@ -124,4 +124,6 @@ The above examples of different controls and their category level shows the mult
 
 **CentOS 7 Discussion**
 
-The above examples 
+The above examples display the major need to ensure that there is proper implementation of tools and limitation of tools such as rsh-server. There are a lot of different tools that are not needed for use under your organization, and should be removed. These could present unknown security risk if they were just left in place. Furthermore, being bale to access the machine either with ssh or physically with a `null` password value leads to a multitude of vulnerabilites. These corrections are necassary to harden the basic access and defense on all the systems across the organizations network.
+
+
